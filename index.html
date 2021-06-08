@@ -8,8 +8,16 @@
 </head>
 <body>
 
+    <section id="welcomeScreen">
+        <form id="welcomeForm">
+            <input type="text" autofocus id="name" placeholder="Name">
+            <input type="submit" id="setName" value="Play" disabled>
+        </form>
+    </section>
+
     <canvas id="gameField"></canvas>
 
+    <script defer type="module" src='js/welcomeScreen.js'></script>
     <script defer type="module" src='js/script.js'></script>
 
 </body>

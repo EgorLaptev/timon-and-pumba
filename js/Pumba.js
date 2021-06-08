@@ -9,7 +9,7 @@ export class Pumba extends Entity
     static y = null;
 
     static w = 200;
-    static h = 200;
+    static h = 175;
 
     static speed = 5;
     static jumpHeight = 100; // In pixels
@@ -18,7 +18,7 @@ export class Pumba extends Entity
     static points = 0;
     static name   = '';
 
-    static skin = '../Media/Пумба/Pumbaa04.png';
+    static skin = '../media/Пумба/Pumbaa04.png';
 
     static render(cnv)
     {
@@ -27,8 +27,13 @@ export class Pumba extends Entity
 
         let pumbaImage = new Image();
         pumbaImage.src = Pumba.skin;
+
+        let stepX = 8,
+            stepY = 1;
+
         ctx.drawImage(pumbaImage, Pumba.x, Pumba.y, Pumba.w, Pumba.h);
 
     }
+
 
 }

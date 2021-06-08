@@ -10,8 +10,3 @@ import {Game} from "./Game.js";
 
 Game.cnv = cnv;
 Game.ctx = ctx;
-
-document.addEventListener('keydown', function (evt) {
-    if(!Game.isStart) Game.start();
-})
-

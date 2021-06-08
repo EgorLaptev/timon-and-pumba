@@ -13,3 +13,43 @@ canvas {
     display: block;
     background-color: #111;
 }
+
+#welcomeScreen {
+    background: #111 url('../media/Wallpaper_1-fr.jpg') 100% 100% no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcomeForm input {
+    padding: 15px 20px;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: greenyellow;
+    color: darkgreen;
+}
+
+#welcomeForm input[type='submit'] {
+    cursor: pointer;
+    background-color: darkgreen;
+    color: greenyellow;
+}
+
+#welcomeForm input[type='submit']:disabled {
+    background-color: greenyellow;
+    color: darkgreen;
+    cursor: default;
+}
+
+#welcomeForm input::placeholder {
+    color: darkgreen;
+}
