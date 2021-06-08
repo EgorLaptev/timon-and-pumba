@@ -27,4 +27,17 @@ export class Caterpillar extends Entity
         return new Caterpillar(x, y, Caterpillar.w, Caterpillar.h);
     }
 
+    static render(cnv)
+    {
+
+        let ctx = cnv.getContext('2d');
+
+        let caterpillarImage = new Image();
+        caterpillarImage.src = Caterpillar.skin;
+        Caterpillar.list.forEach(caterpillar => {
+            ctx.drawImage(caterpillarImage, caterpillar.x, caterpillar.y, Caterpillar.w, Caterpillar.h);
+        });
+
+    }
+
 }

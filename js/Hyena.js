@@ -27,4 +27,17 @@ export class Hyena extends Entity
         return new Hyena(x, y, Hyena.w, Hyena.h);
     }
 
+    static render(cnv)
+    {
+
+        let ctx = cnv.getContext('2d');
+
+        let hyenaImage = new Image();
+        hyenaImage.src = Hyena.skin;
+        Hyena.list.forEach(hyena => {
+            ctx.drawImage(hyenaImage, hyena.x, hyena.y, Hyena.w, Hyena.h);
+        });
+
+    }
+
 }
