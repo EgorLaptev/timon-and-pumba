@@ -12,7 +12,7 @@ export class Pumba extends Entity
     static h = 175;
 
     static speed = 5;
-    static jumpHeight = 15 0; // In pixels
+    static jumpHeight = 15; // In pixels
 
     static health = 100;
     static points = 0;
@@ -27,9 +27,6 @@ export class Pumba extends Entity
 
         let pumbaImage = new Image();
         pumbaImage.src = Pumba.skin;
-
-        let stepX = 8,
-            stepY = 1;
 
         ctx.drawImage(pumbaImage, Pumba.x, Pumba.y, Pumba.w, Pumba.h);
 
