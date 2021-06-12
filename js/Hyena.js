@@ -16,6 +16,10 @@ export class Hyena extends Entity
 
     constructor(x, y, w, h) {
         super(x, y, w, h);
+
+        this.startX = x;
+        this.speed = 3;
+
         Hyena.list.push(this);
     }
 

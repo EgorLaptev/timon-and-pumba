@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" contet="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href=./css/style.css>
+    <script src="https://kit.fontawesome.com/19ce154370.js" crossorigin="anonymous"></script>
     <title>Timon & Pumba</title>
 </head>
 <body>
@@ -15,9 +16,30 @@
         </form>
     </section>
 
+    <section id="loseScreen">
+
+        <div class="wrap">
+
+            <table class="leaders" id="leaders" rules="none">
+                <tr>
+                    <td>№</td>
+                    <td>Name</td>
+                    <td>Points</td>
+                </tr>
+            </table>
+
+            <a href="./" id="playAgain">
+                <i class="fas fa-undo"></i>
+            </a>
+
+        </div>
+
+    </section>
+
     <canvas id="gameField"></canvas>
 
     <script defer type="module" src='js/welcomeScreen.js'></script>
+    <script defer type="module" src='js/loseScreen.js'></script>
     <script defer type="module" src='js/script.js'></script>
 
 </body>

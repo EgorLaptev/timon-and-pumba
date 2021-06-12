@@ -1,0 +1,77 @@
+#loseScreen {
+    background: #111 url('../media/фоны/The-Lion-King-Blu-Ray-the-lion-king-28619554-1209-680.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#loseScreen .wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    font-size: 20px;
+}
+
+#playAgain {
+    display: table;
+    height: 100%;
+    position: relative;
+    padding: 0 20px;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: #0AC800;
+    color: #2D9B27;
+    text-decoration: none;
+    text-align: center;
+}
+
+#playAgain:hover {
+    background-color: #0ABE00;
+    color: darkgreen;
+}
+
+#playAgain:hover i {
+    transform: rotateZ(-360deg);
+}
+
+#playAgain i {
+    display: table-cell;
+    vertical-align: middle;
+    transition: .5s;
+}
+
+table.leaders {
+    background-color: #25D500;
+    color: #2D9B27;
+}
+
+table.leaders tr:nth-child(odd){
+    background-color: #23D200;
+    color: #2D9B27;
+}
+
+table.leaders tr:first-child {
+    background-color: #0ABE00;
+    color: darkgreen;
+}
+
+table.leaders tr:hover {
+    background-color: #0ABE00;
+    cursor: default;
+}
+
+table.leaders td,
+table.leaders th{
+    padding: 15px 125px;
+}
