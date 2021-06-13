@@ -12,7 +12,7 @@ export class Pumba extends Entity
     static h = 175;
 
     static speed = 5;
-    static jumpHeight = 15; // In pixels
+    static jumpHeight = 150; // In pixels
 
     static health = 100;
     static points = 0;
